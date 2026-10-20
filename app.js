@@ -26,7 +26,7 @@ function priceHistoryHtml(p,s) {
   else if(s.failed)notice='마지막 확인을 완료하지 못했어요. 이전 가격을 참고해 주세요.';
   else if(s.stale)notice='오늘 확인 전이에요. 표시 금액은 이전 확인 가격입니다.';
   else if(s.latest&&!s.complete)notice=`최근 30일 중 ${s.days}일 기록 중이에요. 30일 모두 확인되면 최저가 배지를 표시해요.`;
-  return `<section class="price-history" aria-label="${esc(p.name)} 가격 기록"><div class="tracking-line"><span class="price-badge ${s.atLow?'is-low':''} ${s.failed||s.paused?'needs-check':''}">${esc(badge)}</span><span class="checked-time">${latestTime?`마지막 확인 <time datetime="${esc(latestTime)}">${dateTime(latestTime)}</time>`:'아직 확인 기록 없음'}</span></div><dl class="price-stats"><div><dt>${lowLabel}</dt><dd>${s.low===null?'—':`${money(s.low)}<small>원</small>`}</dd></div><div><dt>${s.complete?'30일':'확인 기간'} 평균가</dt><dd>${s.average===null?'—':`${money(s.average)}<small>원</small>`}</dd></div></dl>${s.latest&&s.displayDifference!==null&&!s.failed&&!s.paused?`<p class="price-difference">확인 최저가 대비 ${s.displayDifference===0?'같은 가격':`${money(s.displayDifference)}원 높아요`}</p>`:''}<details class="history-details"><summary>${s.days?'가격 그래프·기록 보기':'가격 기록 안내'}<span aria-hidden="true">↗</span></summary><p class="history-notice">${esc(notice)}</p>${graphHtml(s)}</details></section>`;
+  return `<details class="price-history" aria-label="${esc(p.name)} 가격 기록"><summary class="price-history-toggle">가격 기록 보기<span aria-hidden="true">+</span></summary><div class="price-history-content"><div class="tracking-line"><span class="price-badge ${s.atLow?'is-low':''} ${s.failed||s.paused?'needs-check':''}">${esc(badge)}</span><span class="checked-time">${latestTime?`마지막 확인 <time datetime="${esc(latestTime)}">${dateTime(latestTime)}</time>`:'아직 확인 기록 없음'}</span></div><dl class="price-stats"><div><dt>${lowLabel}</dt><dd>${s.low===null?'—':`${money(s.low)}<small>원</small>`}</dd></div><div><dt>${s.complete?'30일':'확인 기간'} 평균가</dt><dd>${s.average===null?'—':`${money(s.average)}<small>원</small>`}</dd></div></dl>${s.latest&&s.displayDifference!==null&&!s.failed&&!s.paused?`<p class="price-difference">확인 최저가 대비 ${s.displayDifference===0?'같은 가격':`${money(s.displayDifference)}원 높아요`}</p>`:''}<p class="history-notice">${esc(notice)}</p>${graphHtml(s)}</div></details>`;
 }
 function updateOverview() {
   const stats=products.map(snapshot),tracked=stats.filter(s=>s.latest).length;
@@ -42,6 +42,8 @@ function render() {
   if(sort!=='original')list.sort((a,b)=>sort==='low'?summaries.get(a.id).total-summaries.get(b.id).total:summaries.get(b.id).total-summaries.get(a.id).total);
   document.querySelector('#resultLabel').textContent=onlyLow?'30일 확인 최저가':onlySaved?'담아둔 간식':category==='전체'?'전체 간식':category;
   document.querySelector('#resultCount').textContent=list.length;
+  document.querySelector('#clearFilters').hidden=!(query||category!=='전체'||onlySaved||onlyLow);
+  document.querySelector('#clearFilters').textContent=`전체 ${products.length}개 보기`;
   document.querySelector('#savedCount').textContent=saved.size;
   document.querySelector('#savedToggle').classList.toggle('active',onlySaved);
   document.querySelector('#savedToggle').setAttribute('aria-pressed',onlySaved);
@@ -68,10 +70,16 @@ document.querySelector('#search').addEventListener('input',render);
 document.querySelector('#sort').addEventListener('change',render);
 document.querySelector('#lowOnly').addEventListener('change',event=>{onlyLow=event.target.checked;render();});
 document.querySelector('#savedToggle').addEventListener('click',()=>{onlySaved=!onlySaved;render();document.querySelector('#snacks').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});});
-document.querySelector('#reset').addEventListener('click',()=>{
+function resetFilters(){
   category='전체';onlySaved=false;onlyLow=false;document.querySelector('#lowOnly').checked=false;document.querySelector('#search').value='';document.querySelector('#sort').value='original';
   document.querySelectorAll('#tabs button').forEach((b,i)=>{b.classList.toggle('active',i===0);b.setAttribute('aria-pressed',i===0);});render();
-});
+}
+document.querySelector('#reset').addEventListener('click',resetFilters);
+document.querySelector('#clearFilters').addEventListener('click',resetFilters);
+// Start with the full catalog even if a browser restores prior form values.
+document.querySelector('#search').value='';
+document.querySelector('#lowOnly').checked=false;
+document.querySelector('#sort').value='original';
 Promise.all([
   fetch('products.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Products unavailable');return r.json();}),
   fetch('price-history.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('History unavailable');return r.json();}).then(data=>{if(data.schemaVersion!==1||!Array.isArray(data.observations)||!Array.isArray(data.checks))throw Error('Invalid history');return data;}).catch(()=>{historyUnavailable=true;return history;})
