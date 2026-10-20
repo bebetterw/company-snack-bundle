@@ -1,0 +1,71 @@
+name: 가격 기록 및 사이트 게시
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      report:
+        description: '뮤즈가 확인한 가격 JSON. 비워두면 사이트만 다시 게시합니다.'
+        required: false
+        type: string
+        default: ''
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: company-snack-pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Get the latest catalog and history
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+      - name: Import Muse price checks
+        if: github.event_name == 'workflow_dispatch' && inputs.report != ''
+        env:
+          PRICE_REPORT: ${{ inputs.report }}
+        run: |
+          python3 - <<'PY'
+          import os, tempfile, subprocess
+          from pathlib import Path
+          with tempfile.TemporaryDirectory() as directory:
+              report = Path(directory) / 'report.json'
+              report.write_text(os.environ['PRICE_REPORT'])
+              subprocess.run(['python3', 'scripts/record_prices.py', '--input', str(report)], check=True)
+          PY
+      - name: Verify calculations and input validation
+        run: |
+          node --check app.js
+          node --test tests/price-history.test.cjs
+          python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: Save accepted daily history
+        if: github.event_name == 'workflow_dispatch' && inputs.report != ''
+        run: |
+          if ! git diff --quiet -- price-history.json; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add price-history.json
+            git commit -m 'Record Muse daily price checks'
+            git push origin main
+          fi
+      - name: Prepare public files
+        run: |
+          mkdir -p _site
+          cp index.html style.css app.js price-history.js products.json price-history.json .nojekyll _site/
+          cp -R assets _site/
+      - name: Configure Pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+      - name: Upload public site
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: _site
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

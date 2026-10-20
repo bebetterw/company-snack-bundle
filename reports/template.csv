@@ -1,0 +1,37 @@
+product_id,tracking_key,checked_at,status,price,shipping_fee,basis,condition_key,condition_label,configuration,source_url
+1,p1-v1,,,,,,,,해태제과 오예스 28p,https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=1379426555&itemId=25253653148&vendorItemId=92249563521&traceid=V0-153-fb606f5f7bb19e22&requestid=20261014142044032281907691&token=31850C%7CMIXED&pt=0&slot=3
+2,p2-v1,,,,,,,,삼립 한과 미니꿀약과 200개 (개별포장),https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=9737247815&itemId=29141572311&vendorItemId=91662800634&traceid=V0-153-8d95731fd4de16cb&requestid=20261014142045486147165331&token=31850C%7CMIXED&pt=0&slot=3
+3,p3-v1,,,,,,,,크라운 쵸코하임 + 화이트하임 15.7g X 30개,https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=9745345975&itemId=29173473479&vendorItemId=93117757305&traceid=V0-153-b9e1eed072d2f3b1&requestid=20261014142124325192940133&token=31850C%7CMIXED&pt=0&slot=3
+4,p4-v1,,,,,,,,롯데 빈츠 대용량 50개 (개별포장),https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=9732667918&itemId=29125120068&vendorItemId=90754742583&traceid=V0-153-0d425f6f1ae8a15e&clickBeacon=04003810-c78f-11f1-94d1-32be9a28df08%7E3&requestid=20261014142048591283684498&token=31850C%7CMIXED&pt=1&slot=1
+5,p5-v1,,,,,,,,쿠크다스 화이트 289g + 커피 289g + 쵸코하임 284g + 화이트하임 284g 세트,https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=8279260682&itemId=17425026519&vendorItemId=86507379137&traceid=V0-153-3c43f5aa7f6303bf&requestid=20261014142125760117859909&token=31850C%7CMIXED&pt=0&slot=4
+6,p6-v1,,,,,,,,오리온 오뜨 치즈 12개입 4개,https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=9736758526&itemId=29139858970&vendorItemId=96003749334&traceid=V0-153-fdf87dc86a6154da&clickBeacon=05edd740-c78f-11f1-9047-14cf6886aca5%7E3&requestid=20261014142051799302910165&token=31850C%7CMIXED&pt=1&slot=1
+7,p7-v1,,,,,,,,"예감 오리지널 대용량, 1.44kg",https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=9741392037&itemId=29157485891&vendorItemId=96079860598&traceid=V0-153-b436c03d14d0fd42&clickBeacon=06e49350-c78f-11f1-98a2-2fedd939105f%7E3&requestid=20261014142053431302930107&token=31850C%7CMIXED&pt=1&slot=1
+8,p8-v1,,,,,,,,해태제과 에이스 대용량 크래커 40개 (개별포장),https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=9736314626&itemId=29138123514&vendorItemId=88648698694&traceid=V0-153-84ee51a58b3f1668&clickBeacon=07c0c280-c78f-11f1-b19a-1e8dae038d98%7E3&requestid=20261014142054829281902175&token=31850C%7CMIXED&pt=1&slot=1
+9,p9-v1,,,,,,,,오레오 초콜릿 샌드위치 쿠키 화이트 크림,https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=8402456448&itemId=6527648919&vendorItemId=73821782369&traceid=V0-153-e99bc88ac0ffc05a&requestid=20261014142056202305294804&token=31850C%7CMIXED&pt=0&slot=1
+10,p10-v1,,,,,,,,오리온 초코파이 대용량 실속형,https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=9285402493&itemId=23825074139&vendorItemId=96159631240&traceid=V0-153-4d82afde5fad0ab0&requestid=20261014142057480194859140&token=31850C%7CMIXED&pt=0&slot=3
+11,p11-v1,,,,,,,,롯데제과 칙촉 오리지널,https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=6813176799&itemId=19457777896&vendorItemId=85321286829&traceid=V0-153-a710c0436c626114&requestid=20261014142059083194859893&token=31850C%7CMIXED&pt=0&slot=3
+12,p12-v1,,,,,,,,롯데 몽쉘 생크림 오리지널 24개입 2개,https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=9723809135&itemId=29098999178&vendorItemId=95993954511&traceid=V0-153-f0bf71d46e17016a&clickBeacon=0b366140-c78f-11f1-9bd4-9dc5f4f8d8f4%7E3&requestid=20261014142100650027628548&token=31850C%7CMIXED&pt=1&slot=2
+13,p13-v1,,,,,,,,마가렛트 오리지널,https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=7649884594&itemId=18626006706&vendorItemId=85321298760&traceid=V0-153-ecbb33c3aa539d0a&requestid=20261014142102342283680712&token=31850C%7CMIXED&pt=0&slot=3
+14,p14-v1,,,,,,,,오리온 비쵸비 비스켓,https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=8744029184&itemId=25780958476&vendorItemId=85129874039&traceid=V0-153-a091162d03e47e14&requestid=20261014142103835027620012&token=31850C%7CMIXED&pt=0&slot=3
+15,p15-v1,,,,,,,,해태 자유시간 미니 초코바 60개 (개별포장),https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=9732678703&itemId=29125154061&vendorItemId=94585972114&traceid=V0-153-24f97ce2b9877fd8&requestid=20261014142105323281906843&token=31850C%7CMIXED&pt=0&slot=3
+16,p16-v1,,,,,,,,오리온 카스타드 12P x3박스,https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=9716584836&itemId=28740613859&vendorItemId=94497977912&traceid=V0-153-b3232cc575e31a55&requestid=20261014142129031173276467&token=31850C%7CMIXED&pt=0&slot=3
+17,p17-v1,,,,,,,,촉촉한초코칩,https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=133770082&itemId=3538906317&vendorItemId=85321266126&traceid=V0-153-561f0f35f785bafb&requestid=20261014142127203247934208&token=31850C%7CMIXED&pt=0&slot=3
+18,p18-v1,,,,,,,,윈윈푸드 포테이토 크리스프 과자세트,https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=7891015462&itemId=25333225126&vendorItemId=88377258493&traceid=V0-153-3429c47951631a6b&requestid=20261014142109771174497301&token=31850C%7CMIXED&pt=0&slot=3
+19,p19-v1,,,,,,,,오리온 닥터유 단백질바 50g,https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=7430740821&itemId=11379123283&vendorItemId=85145829455&traceid=V0-153-a3aa610862c48cf7&requestid=20261014142111354006378473&token=31850C%7CMIXED&pt=0&slot=3
+20,p20-v1,,,,,,,,비스코프 싱글팩 비스켓,https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=8285435999&itemId=20248375722&vendorItemId=91138486614&traceid=V0-153-782e3a8220360bb6&requestid=20261014142112675117391572&token=31850C%7CMIXED&pt=0&slot=1
+21,p21-v1,,,,,,,,355ml · 24개,https://link.coupang.com/a/h0hKG8C80y
+22,p22-v1,,,,,,,,350ml · 48개,https://link.coupang.com/a/h0hKHbuGc0
+23,p23-v1,,,,,,,,355ml · 24개,https://link.coupang.com/a/h0hKHmZlEi
+24,p24-v1,,,,,,,,350ml · 24개 (제공 구성),https://link.coupang.com/a/h0hKGOvaFM
+25,p25-v1,,,,,,,,500ml · 20개,https://link.coupang.com/a/h0iaKlS6bk
+27,p27-v1,,,,,,,,190ml · 30캔,https://link.coupang.com/a/h0ipLZPbCS
+28,p28-v1,,,,,,,,190ml · 30캔,https://link.coupang.com/a/h0iclHuLhQ
+29,p29-v1,,,,,,,,190ml · 24개,https://link.coupang.com/a/h0iaKT7mr6
+30,p30-v1,,,,,,,,190ml · 64개,https://link.coupang.com/a/h0iaKNAAsC
+31,p31-v1,,,,,,,,대란 · 60구,https://link.coupang.com/a/h0ipLPIXV6
+32,p32-v1,,,,,,,,대란 · 60구,https://link.coupang.com/a/h0ipLT0uMS
+33,p33-v1,,,,,,,,250ml · 18개,https://link.coupang.com/a/h0jaMatOQm
+34,p34-v1,,,,,,,,250ml · 초코 9개 + 커피 9개,https://link.coupang.com/a/h0jaMf2sr6
+35,p35-v1,,,,,,,,190ml · 24개,https://link.coupang.com/a/h0jaMnxeiO
+36,p36-v1,,,,,,,,190ml · 24개,https://link.coupang.com/a/h0jaMvt8s8
+37,p37-v1,,,,,,,,210ml 미니캔 · 30개,https://link.coupang.com/a/h0jaMEamvA

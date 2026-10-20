@@ -1,13 +1,82 @@
 # 회사 간식 꾸러미
 
-과자와 음료 등 36개 상품을 비교하고 구매 링크로 이동할 수 있는 정적 웹사이트입니다.
+[공개 사이트](https://bebetterw.github.io/company-snack-bundle/)
 
-- 공개 사이트: https://bebetterw.github.io/company-snack-bundle/
-- 구성: HTML, CSS, JavaScript, 상품 데이터, 실제 상품 사진
-- 기능: 상품 검색, 종류별 필터, 가격 정렬, 브라우저에 간식 담아두기
+간식·음료 36개 상품의 구성과 구매 링크를 비교하는 정적 웹사이트입니다. 상품 사진을 누르면 해당 쿠팡 페이지가 새 탭으로 열립니다.
 
-## 수정 및 게시
+## 가격 기록
 
-상품은 `products.json`에서 수정합니다. 사진은 `assets/`에 저장합니다. 상품 수와 안내 문구를 함께 갱신해 주세요. `main` 브랜치의 루트 폴더를 GitHub Pages로 게시합니다.
+- **가격 확인은 뮤즈가 하루 한 번 수행합니다.** 이 저장소는 자동 가격 수집이나 예약 실행을 하지 않습니다.
+- `price-history.json`은 실제 전달받은 날짜별 확인 기록을 누적합니다. 기존 상품 가격은 제공 가격으로만 남기고 과거 이력을 만들지 않습니다.
+- 같은 상품 구성(`trackingKey`)·일반/와우/쿠폰 조건(`basis`, `condition_key`)끼리만 비교합니다. 배송비를 더한 총액으로 최저가·평균가·그래프를 계산합니다.
+- 한국 시간 기준 오늘을 포함한 최근 30일을 비교합니다. 30일 모두 유효한 가격 기록이 있고 오늘 가격이 최저값과 같을 때만 `30일 확인 최저가` 배지를 붙입니다. 그 전에는 `기록 중 · N/30일`로 표시합니다.
+- `30일 확인 최저가`는 하루 한 번 확인한 기록의 최저값이며, 수집 사이에 발생한 모든 가격 변동을 포함하지 않습니다.
+- 조회 실패·품절·구성 불일치는 가격으로 저장하지 않습니다. 이전 확인 가격을 보존하며 마지막 확인 상태를 표시합니다. 실패한 날과 빈 날짜를 추정하지 않고 그래프 선도 건너뛰어 연결하지 않습니다.
+- 같은 상품·조건·한국 날짜에 재입력하면 더 늦은 확인 결과로 갱신합니다. 같은 결과를 중복 전달해도 기록 수는 늘어나지 않습니다. 이후 날짜를 입력해도 앞선 날짜 기록은 유지됩니다.
 
-가격은 제공 자료 기준이며 실시간 가격이 아닙니다. 최종 가격과 옵션은 구매 페이지에서 확인해 주세요. 쿠팡 파트너스 안내와 사진 출처는 사이트 하단에서 확인할 수 있습니다. 사진 권리는 각 권리자에게 있습니다.
+## 뮤즈 입력 방법
+
+매일 저장소의 최신 `main`을 받은 뒤 다음 중 하나로 제출합니다. 가격 입력 및 게시에는 해당 GitHub 저장소에 대한 쓰기 권한이 필요합니다. 비밀키나 계정 정보를 보고서에 넣지 마세요. 가격 이력은 공개됩니다.
+
+### 1. CSV 또는 JSON 제출 — 권장
+
+`reports/template.csv`에 36개 상품의 ID·구성·링크가 들어 있습니다. 확인한 행만 남기고 아래 필드를 채웁니다. 가격과 배송비는 쉼표 없는 정수입니다. 배송비를 확인하지 못한 경우 0원으로 추정하지 말고 `failed`로 제출합니다.
+
+| 필드 | 의미 |
+| --- | --- |
+| `product_id` | `products.json`의 고정 ID. 화면에 보이는 순번과 다를 수 있습니다. |
+| `tracking_key` | `products.json`의 `trackingKey`. 구성 변경 시 기존 기록과 분리합니다. |
+| `checked_at` | 실제 확인 시각, 예: `2026-10-21T09:00:00+09:00`. 시간대 필수. |
+| `status` | `ok`, `failed`, `out_of_stock`, `configuration_mismatch` 중 하나. |
+| `price` | 해당 묶음의 확인 가격. 쿠폰가라면 할인 적용 후 가격. |
+| `shipping_fee` | 이 상품 구성에 적용되는 배송비. 무료배송을 확인한 경우에만 `0`. |
+| `basis` | `regular`, `wow`, `coupon`, `wow_coupon` 중 하나. |
+| `condition_key` | 같은 구매 조건을 식별하는 고정값. 쿠폰 종류·조건이 달라지면 별도 값. |
+| `condition_label` | 화면에 보일 조건. 예: `와우회원 10% 쿠폰 적용`. 쿠폰이면 필수. |
+| `configuration` | 성공 기록은 `products.json`의 `desc`와 정확히 같아야 합니다. |
+| `source_url` | 해당 상품의 등록 파트너스 URL 또는 같은 상품·옵션·판매자의 쿠팡 URL. |
+
+```sh
+# 입력 검증만 합니다. 기록이나 사이트는 바뀌지 않습니다.
+python3 scripts/submit_prices.py /path/to/daily-check.csv --validate-only
+
+# 검증 후 GitHub에 제출합니다. gh가 인증된 환경에서 실행하세요.
+python3 scripts/submit_prices.py /path/to/daily-check.csv
+```
+
+JSON은 위 필드 이름을 사용한 배열 또는 `{"records": [...]}` 형식입니다. 부분 입력도 가능합니다. 실패·품절 보고에는 ID·tracking_key·checked_at·status만 필요합니다.
+
+검증 오류가 하나라도 있으면 보고서 전체가 반영되지 않습니다. GitHub Actions의 **가격 기록 및 사이트 게시** 실행 결과를 확인하세요. 성공하면 날짜별 이력이 저장되고 Pages가 다시 게시됩니다. 이 경로는 상품을 직접 조회하지 않습니다.
+
+### 2. 저장소에서 직접 기록
+
+```sh
+python3 scripts/record_prices.py --input /path/to/daily-check.json
+git add price-history.json
+git commit -m "Record daily price checks"
+git push origin main
+```
+
+`main`의 변경은 GitHub Actions가 검증 후 게시합니다. `price-history.json` 전체를 빈 파일이나 당일 기록으로 덮어쓰지 마세요.
+
+### 구성 불일치
+
+스프라이트(ID 24)는 등록된 24개 구성과 연결 페이지의 48개 표시가 달라 `trackingPaused` 상태입니다. 일치하는 링크·구성으로 정리한 뒤 `trackingKey`를 새 버전으로 바꾸고 보류를 해제해야 가격을 기록할 수 있습니다. 용량·수량·맛 또는 판매 옵션이 달라지는 다른 상품도 같은 방법으로 기록을 분리하세요.
+
+## 검증
+
+```sh
+node --test tests/price-history.test.cjs
+python3 -m unittest discover -s tests -p 'test_*.py'
+```
+
+## 파일
+
+- `products.json`: 상품 및 구매 링크, 제공 가격, 비교 구성
+- `price-history.json`: 날짜별 가격 및 확인 상태
+- `price-history.js`: 최근 30일 비교·그래프 계산
+- `scripts/record_prices.py`: CSV/JSON 검증 및 이력 누적
+- `scripts/submit_prices.py`: 뮤즈 보고서를 GitHub 게시 작업에 제출
+- `.github/workflows/pages.yml`: 입력 검증·이력 저장·Pages 게시
+
+쿠팡 파트너스 안내와 사진 출처는 사이트 하단에 있습니다. 사진 권리는 각 권리자에게 있습니다. 결제 금액과 상품 구성은 구매 페이지에서 확인해 주세요.
