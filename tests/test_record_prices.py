@@ -39,4 +39,28 @@ class ImportTests(unittest.TestCase):
   self.assertEqual(self.run_merge([{**ROW,'status':'configuration_mismatch'}],product=p)['checks'][0]['status'],'configuration_mismatch')
  def test_korea_day_same_key(self):
   r=self.run_merge([ROW,{**ROW,'checked_at':'2026-10-20T16:00:00Z','price':24000}]);self.assertEqual(len(r['observations']),1);self.assertEqual(r['observations'][0]['price'],24250)
+class MemoTests(unittest.TestCase):
+ def memo(self,**patch):
+  row={k:v for k,v in ROW.items() if k not in {'checked_at','shipping_fee'}}
+  return {**row,'checked_date':'2026-10-21','source_kind':'memo','price_scope':'item',**patch}
+ def merge(self,rows,history=None):return mod.merge(copy.deepcopy(history or EMPTY),rows,[P],NOW)
+ def test_date_only_memo_never_claims_a_time_or_free_shipping(self):
+  r=self.merge([self.memo()])['observations'][0]
+  self.assertEqual(r['checkedDate'],'2026-10-21');self.assertNotIn('checkedAt',r);self.assertIsNone(r['shippingFee']);self.assertEqual(r['sourceKind'],'memo')
+ def test_item_price_requires_explicit_scope(self):
+  with self.assertRaises(ValueError):self.merge([self.memo(price_scope='total')])
+ def test_date_only_source_time_and_future_validated(self):
+  for patch in [{'source_kind':'unknown'},{'checked_at':ROW['checked_at']},{'checked_date':'2026-10-22'},{'checked_date':'2026-02-30'},{'checked_date':'20261021'},{'shipping_fee':0}]:
+   with self.subTest(patch=patch),self.assertRaises(ValueError):self.merge([self.memo(**patch)])
+ def test_idempotent_memo_update_and_precise_checks_win(self):
+  first=self.merge([self.memo()]);self.assertEqual(first,self.merge([self.memo()],first))
+  newer=self.merge([ROW],first);self.assertEqual(newer['checks'][0]['checkedAt'],ROW['checked_at'])
+  self.assertEqual(newer,self.merge([self.memo()],newer))
+ def test_total_and_item_same_day_are_separate(self):
+  r=self.merge([self.memo(),ROW]);self.assertEqual(len(r['observations']),2);self.assertEqual(len(r['checks']),1)
+ def test_report_metadata_survives_future_imports(self):
+  history={**EMPTY,'reportSummary':{'date':'2026-10-21'}}
+  self.assertEqual(self.merge([self.memo()],history)['reportSummary'],history['reportSummary'])
+ def test_date_only_failure_has_no_observation(self):
+  r=self.merge([self.memo(status='configuration_mismatch')]);self.assertEqual(r['observations'],[]);self.assertEqual(r['checks'][0]['checkedDate'],'2026-10-21')
 if __name__=='__main__':unittest.main()
