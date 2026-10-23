@@ -616,6 +616,482 @@
       "configuration": "210ml 미니캔 · 30개",
       "sourceUrl": "https://link.coupang.com/a/h0jaMEamvA",
       "priceScope": "item"
+    },
+    {
+      "productId": 1,
+      "trackingKey": "p1-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 17100,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "해태제과 오예스 28p",
+      "sourceUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=1379426555&itemId=25253653148&vendorItemId=92249563521&traceid=V0-153-fb606f5f7bb19e22&requestid=20261014142044032281907691&token=31850C%7CMIXED&pt=0&slot=3",
+      "priceScope": "item"
+    },
+    {
+      "productId": 2,
+      "trackingKey": "p2-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 15900,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "삼립 한과 미니꿀약과 200개 (개별포장)",
+      "sourceUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=9737247815&itemId=29141572311&vendorItemId=91662800634&traceid=V0-153-8d95731fd4de16cb&requestid=20261014142045486147165331&token=31850C%7CMIXED&pt=0&slot=3",
+      "priceScope": "item"
+    },
+    {
+      "productId": 3,
+      "trackingKey": "p3-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 12900,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "크라운 쵸코하임 + 화이트하임 15.7g X 30개",
+      "sourceUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=9745345975&itemId=29173473479&vendorItemId=93117757305&traceid=V0-153-b9e1eed072d2f3b1&requestid=20261014142124325192940133&token=31850C%7CMIXED&pt=0&slot=3",
+      "priceScope": "item"
+    },
+    {
+      "productId": 4,
+      "trackingKey": "p4-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 12900,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "롯데 빈츠 대용량 50개 (개별포장)",
+      "sourceUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=9732667918&itemId=29125120068&vendorItemId=90754742583&traceid=V0-153-0d425f6f1ae8a15e&clickBeacon=04003810-c78f-11f1-94d1-32be9a28df08%7E3&requestid=20261014142048591283684498&token=31850C%7CMIXED&pt=1&slot=1",
+      "priceScope": "item"
+    },
+    {
+      "productId": 5,
+      "trackingKey": "p5-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 15460,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "쿠크다스 화이트 289g + 커피 289g + 쵸코하임 284g + 화이트하임 284g 세트",
+      "sourceUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=8279260682&itemId=17425026519&vendorItemId=86507379137&traceid=V0-153-3c43f5aa7f6303bf&requestid=20261014142125760117859909&token=31850C%7CMIXED&pt=0&slot=4",
+      "priceScope": "item"
+    },
+    {
+      "productId": 6,
+      "trackingKey": "p6-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 34900,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "오리온 오뜨 치즈 12개입 4개",
+      "sourceUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=9736758526&itemId=29139858970&vendorItemId=96003749334&traceid=V0-153-fdf87dc86a6154da&clickBeacon=05edd740-c78f-11f1-9047-14cf6886aca5%7E3&requestid=20261014142051799302910165&token=31850C%7CMIXED&pt=1&slot=1",
+      "priceScope": "item"
+    },
+    {
+      "productId": 7,
+      "trackingKey": "p7-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 34700,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "예감 오리지널 대용량, 1.44kg",
+      "sourceUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=9741392037&itemId=29157485891&vendorItemId=96079860598&traceid=V0-153-b436c03d14d0fd42&clickBeacon=06e49350-c78f-11f1-98a2-2fedd939105f%7E3&requestid=20261014142053431302930107&token=31850C%7CMIXED&pt=1&slot=1",
+      "priceScope": "item"
+    },
+    {
+      "productId": 8,
+      "trackingKey": "p8-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 13900,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "해태제과 에이스 대용량 크래커 40개 (개별포장)",
+      "sourceUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=9736314626&itemId=29138123514&vendorItemId=88648698694&traceid=V0-153-84ee51a58b3f1668&clickBeacon=07c0c280-c78f-11f1-b19a-1e8dae038d98%7E3&requestid=20261014142054829281902175&token=31850C%7CMIXED&pt=1&slot=1",
+      "priceScope": "item"
+    },
+    {
+      "productId": 9,
+      "trackingKey": "p9-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 9800,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "오레오 초콜릿 샌드위치 쿠키 화이트 크림",
+      "sourceUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=8402456448&itemId=6527648919&vendorItemId=73821782369&traceid=V0-153-e99bc88ac0ffc05a&requestid=20261014142056202305294804&token=31850C%7CMIXED&pt=0&slot=1",
+      "priceScope": "item"
+    },
+    {
+      "productId": 10,
+      "trackingKey": "p10-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 33900,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "오리온 초코파이 대용량 실속형",
+      "sourceUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=9285402493&itemId=23825074139&vendorItemId=96159631240&traceid=V0-153-4d82afde5fad0ab0&requestid=20261014142057480194859140&token=31850C%7CMIXED&pt=0&slot=3",
+      "priceScope": "item"
+    },
+    {
+      "productId": 11,
+      "trackingKey": "p11-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 10520,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "롯데제과 칙촉 오리지널",
+      "sourceUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=6813176799&itemId=19457777896&vendorItemId=85321286829&traceid=V0-153-a710c0436c626114&requestid=20261014142059083194859893&token=31850C%7CMIXED&pt=0&slot=3",
+      "priceScope": "item"
+    },
+    {
+      "productId": 12,
+      "trackingKey": "p12-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 36800,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "롯데 몽쉘 생크림 오리지널 24개입 2개",
+      "sourceUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=9723809135&itemId=29098999178&vendorItemId=95993954511&traceid=V0-153-f0bf71d46e17016a&clickBeacon=0b366140-c78f-11f1-9bd4-9dc5f4f8d8f4%7E3&requestid=20261014142100650027628548&token=31850C%7CMIXED&pt=1&slot=2",
+      "priceScope": "item"
+    },
+    {
+      "productId": 13,
+      "trackingKey": "p13-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 15890,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "마가렛트 오리지널",
+      "sourceUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=7649884594&itemId=18626006706&vendorItemId=85321298760&traceid=V0-153-ecbb33c3aa539d0a&requestid=20261014142102342283680712&token=31850C%7CMIXED&pt=0&slot=3",
+      "priceScope": "item"
+    },
+    {
+      "productId": 14,
+      "trackingKey": "p14-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 14490,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "오리온 비쵸비 비스켓",
+      "sourceUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=8744029184&itemId=25780958476&vendorItemId=85129874039&traceid=V0-153-a091162d03e47e14&requestid=20261014142103835027620012&token=31850C%7CMIXED&pt=0&slot=3",
+      "priceScope": "item"
+    },
+    {
+      "productId": 15,
+      "trackingKey": "p15-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 13450,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "해태 자유시간 미니 초코바 60개 (개별포장)",
+      "sourceUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=9732678703&itemId=29125154061&vendorItemId=94585972114&traceid=V0-153-24f97ce2b9877fd8&requestid=20261014142105323281906843&token=31850C%7CMIXED&pt=0&slot=3",
+      "priceScope": "item"
+    },
+    {
+      "productId": 16,
+      "trackingKey": "p16-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 13680,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "오리온 카스타드 12P x3박스",
+      "sourceUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=9716584836&itemId=28740613859&vendorItemId=94497977912&traceid=V0-153-b3232cc575e31a55&requestid=20261014142129031173276467&token=31850C%7CMIXED&pt=0&slot=3",
+      "priceScope": "item"
+    },
+    {
+      "productId": 17,
+      "trackingKey": "p17-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 11500,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "촉촉한초코칩",
+      "sourceUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=133770082&itemId=3538906317&vendorItemId=85321266126&traceid=V0-153-561f0f35f785bafb&requestid=20261014142127203247934208&token=31850C%7CMIXED&pt=0&slot=3",
+      "priceScope": "item"
+    },
+    {
+      "productId": 18,
+      "trackingKey": "p18-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 13720,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "윈윈푸드 포테이토 크리스프 과자세트",
+      "sourceUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=7891015462&itemId=25333225126&vendorItemId=88377258493&traceid=V0-153-3429c47951631a6b&requestid=20261014142109771174497301&token=31850C%7CMIXED&pt=0&slot=3",
+      "priceScope": "item"
+    },
+    {
+      "productId": 19,
+      "trackingKey": "p19-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 24980,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "오리온 닥터유 단백질바 50g",
+      "sourceUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=7430740821&itemId=11379123283&vendorItemId=85145829455&traceid=V0-153-a3aa610862c48cf7&requestid=20261014142111354006378473&token=31850C%7CMIXED&pt=0&slot=3",
+      "priceScope": "item"
+    },
+    {
+      "productId": 20,
+      "trackingKey": "p20-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 25200,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "비스코프 싱글팩 비스켓",
+      "sourceUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF4946702&pageKey=8285435999&itemId=20248375722&vendorItemId=91138486614&traceid=V0-153-782e3a8220360bb6&requestid=20261014142112675117391572&token=31850C%7CMIXED&pt=0&slot=1",
+      "priceScope": "item"
+    },
+    {
+      "productId": 21,
+      "trackingKey": "p21-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 27500,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "355ml · 24개",
+      "sourceUrl": "https://link.coupang.com/a/h0hKG8C80y",
+      "priceScope": "item"
+    },
+    {
+      "productId": 22,
+      "trackingKey": "p22-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 38880,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "350ml · 48개",
+      "sourceUrl": "https://link.coupang.com/a/h0hKHbuGc0",
+      "priceScope": "item"
+    },
+    {
+      "productId": 25,
+      "trackingKey": "p25-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 13500,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "500ml · 20개",
+      "sourceUrl": "https://link.coupang.com/a/h0iaKlS6bk",
+      "priceScope": "item"
+    },
+    {
+      "productId": 27,
+      "trackingKey": "p27-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 9780,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "190ml · 30캔",
+      "sourceUrl": "https://link.coupang.com/a/h0ipLZPbCS",
+      "priceScope": "item"
+    },
+    {
+      "productId": 28,
+      "trackingKey": "p28-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 10150,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "190ml · 30캔",
+      "sourceUrl": "https://link.coupang.com/a/h0iclHuLhQ",
+      "priceScope": "item"
+    },
+    {
+      "productId": 29,
+      "trackingKey": "p29-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 10660,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "190ml · 24개",
+      "sourceUrl": "https://link.coupang.com/a/h0iaKT7mr6",
+      "priceScope": "item"
+    },
+    {
+      "productId": 30,
+      "trackingKey": "p30-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 33900,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "190ml · 64개",
+      "sourceUrl": "https://link.coupang.com/a/h0iaKNAAsC",
+      "priceScope": "item"
+    },
+    {
+      "productId": 31,
+      "trackingKey": "p31-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 18330,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "대란 · 60구",
+      "sourceUrl": "https://link.coupang.com/a/h0ipLPIXV6",
+      "priceScope": "item"
+    },
+    {
+      "productId": 32,
+      "trackingKey": "p32-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 18500,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "대란 · 60구",
+      "sourceUrl": "https://link.coupang.com/a/h0ipLT0uMS",
+      "priceScope": "item"
+    },
+    {
+      "productId": 33,
+      "trackingKey": "p33-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 23760,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "250ml · 18개",
+      "sourceUrl": "https://link.coupang.com/a/h0jaMatOQm",
+      "priceScope": "item"
+    },
+    {
+      "productId": 34,
+      "trackingKey": "p34-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 25900,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "250ml · 초코 9개 + 커피 9개",
+      "sourceUrl": "https://link.coupang.com/a/h0jaMf2sr6",
+      "priceScope": "item"
+    },
+    {
+      "productId": 35,
+      "trackingKey": "p35-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 14950,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "190ml · 24개",
+      "sourceUrl": "https://link.coupang.com/a/h0jaMnxeiO",
+      "priceScope": "item"
+    },
+    {
+      "productId": 36,
+      "trackingKey": "p36-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 15900,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "190ml · 24개",
+      "sourceUrl": "https://link.coupang.com/a/h0jaMvt8s8",
+      "priceScope": "item"
+    },
+    {
+      "productId": 37,
+      "trackingKey": "p37-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "price": 13920,
+      "shippingFee": null,
+      "basis": "wow",
+      "conditionKey": "wow",
+      "conditionLabel": "와우회원가",
+      "configuration": "210ml 미니캔 · 30개",
+      "sourceUrl": "https://link.coupang.com/a/h0jaMEamvA",
+      "priceScope": "item"
     }
   ],
   "checks": [
@@ -940,13 +1416,265 @@
       "checkedDate": "2026-10-22",
       "sourceKind": "memo",
       "status": "ok"
+    },
+    {
+      "productId": 1,
+      "trackingKey": "p1-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 2,
+      "trackingKey": "p2-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 3,
+      "trackingKey": "p3-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 4,
+      "trackingKey": "p4-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 5,
+      "trackingKey": "p5-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 6,
+      "trackingKey": "p6-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 7,
+      "trackingKey": "p7-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 8,
+      "trackingKey": "p8-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 9,
+      "trackingKey": "p9-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 10,
+      "trackingKey": "p10-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 11,
+      "trackingKey": "p11-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 12,
+      "trackingKey": "p12-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 13,
+      "trackingKey": "p13-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 14,
+      "trackingKey": "p14-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 15,
+      "trackingKey": "p15-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 16,
+      "trackingKey": "p16-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 17,
+      "trackingKey": "p17-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 18,
+      "trackingKey": "p18-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 19,
+      "trackingKey": "p19-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 20,
+      "trackingKey": "p20-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 21,
+      "trackingKey": "p21-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 22,
+      "trackingKey": "p22-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 23,
+      "trackingKey": "p23-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "configuration_mismatch"
+    },
+    {
+      "productId": 24,
+      "trackingKey": "p24-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "configuration_mismatch"
+    },
+    {
+      "productId": 25,
+      "trackingKey": "p25-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 27,
+      "trackingKey": "p27-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 28,
+      "trackingKey": "p28-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 29,
+      "trackingKey": "p29-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 30,
+      "trackingKey": "p30-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 31,
+      "trackingKey": "p31-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 32,
+      "trackingKey": "p32-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 33,
+      "trackingKey": "p33-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 34,
+      "trackingKey": "p34-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 35,
+      "trackingKey": "p35-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 36,
+      "trackingKey": "p36-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
+    },
+    {
+      "productId": 37,
+      "trackingKey": "p37-v1",
+      "checkedDate": "2026-10-23",
+      "sourceKind": "memo",
+      "status": "ok"
     }
   ],
   "reportSummary": {
-    "date": "2026-10-22",
-    "up": 3,
-    "down": 6,
-    "unchanged": 27,
-    "note": "전달 메모의 전체 36개 집계입니다. 칠성사이다는 상품 확인 전, 스프라이트는 수량 불일치로 비교 이력에서 제외했습니다. 코카콜라는 메모의 27,500원을 반영했습니다. 전일 가격이 명시된 10개만 10.21 이력을 함께 기록했습니다."
+    "date": "2026-10-23",
+    "up": 1,
+    "down": 7,
+    "unchanged": 28,
+    "note": "전달 메모의 전체 36개 집계입니다. 칠성사이다는 상품번호 불일치 보고가 반복되어 반영을 보류하고, 스프라이트는 기존 수량 불일치로 비교 이력에서 제외했습니다. 나머지 34개 상품의 오늘 와우 상품가를 기록했으며, 이전 날짜의 이력은 유지했습니다."
   }
 }
